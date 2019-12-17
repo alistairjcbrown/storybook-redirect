@@ -2,10 +2,16 @@
   "name": "storybook-redirect",
   "version": "1.0.0",
   "description": "Storybook Addon Redirect allows you to create redirects to your stories in Storybook",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "jest ."
+    "build": "npm run clean && rollup -c",
+    "clean": "rm -rf ./dist",
+    "test": "jest"
   },
+  "files": [
+    "register.js",
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alistairjcbrown/storybook-redirect.git"
@@ -29,8 +35,12 @@
     "@storybook/core-events": "^5.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.0",
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
     "babel-jest": "^24.9.0",
-    "jest": "^24.9.0"
+    "jest": "^24.9.0",
+    "rollup": "^1.27.13",
+    "rollup-plugin-babel": "^4.3.3"
   }
 }

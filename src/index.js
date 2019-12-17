@@ -1,6 +1,6 @@
-const { addons } = require("@storybook/addons");
-const { SET_STORIES, STORY_MISSING } = require("@storybook/core-events");
-const getKeyDefault = require("./get-key");
+import { addons } from "@storybook/addons";
+import { SET_STORIES, STORY_MISSING } from "@storybook/core-events";
+import getKeyDefault from "./get-key";
 
 const ADDON_ID = "storybook-redirect";
 

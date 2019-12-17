@@ -1,4 +1,4 @@
-const getKey = require("../get-key");
+import getKey from "../get-key";
 
 const createStory = fileName => ({ parameters: { fileName } });
 describe("getKey", () => {

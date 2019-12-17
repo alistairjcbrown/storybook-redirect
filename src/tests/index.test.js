@@ -1,6 +1,6 @@
-const { addons } = require("@storybook/addons");
-const { SET_STORIES, STORY_MISSING } = require("@storybook/core-events");
-const storybookRedirect = require("../");
+import { addons } from "@storybook/addons";
+import { SET_STORIES, STORY_MISSING } from "@storybook/core-events";
+import storybookRedirect from "../";
 
 const stories = {
   "test-stories--test-story-1": {

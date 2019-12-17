@@ -13,4 +13,4 @@ function getKeyDefault({ parameters: { fileName } }) {
   return null;
 }
 
-module.exports = getKeyDefault;
+export default getKeyDefault;
